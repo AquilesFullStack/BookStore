@@ -21,6 +21,7 @@ RUN apt-get update \
 
 RUN pip install poetry
 
+#postgres dependencies
 RUN apt-get update \
     && apt-get -y install libpq-dev gcc \
     && pip install psycopg2
