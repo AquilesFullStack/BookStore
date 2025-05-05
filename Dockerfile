@@ -1,4 +1,4 @@
-FROM python:3.8.1-slim AS python-base
+FROM python:3.9.1-slim AS python-base
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -28,7 +28,7 @@ RUN apt-get update \
 
 WORKDIR $PYSETUP_PATH
 COPY poetry.lock pyproject.toml ./
-RUN poetry install --no-dev
+RUN poetry install --without dev --no-root
 
 WORKDIR /app
 COPY . /app/
