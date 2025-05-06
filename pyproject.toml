@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "BookStore"
+name = "bookstore"
 version = "0.1.0"
 description = "Bookstore API"
 authors = ["José Aquiles <aquilesnetto2002@gmail.com>"]
@@ -25,3 +25,6 @@ factory-boy = "^3.2.0"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.packages]
+include = "BookStore"
