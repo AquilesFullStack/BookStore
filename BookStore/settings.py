@@ -54,6 +54,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware"
+    "whitenoise.middleware.WhiteNoiseMiddleware",
+
 ]
 
 ROOT_URLCONF = "BookStore.urls"
@@ -74,6 +76,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "BookStore.wsgi.application"
+
+STATIC_ROOT = BASE_DIR /'staticfiles'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Database
@@ -150,6 +156,7 @@ REST_FRAMEWORK = {
 
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 # For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "127.0.0.1").split(" ")
+
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 # DEBUG = os.environ.get("DEBUG", "0") == "1"
