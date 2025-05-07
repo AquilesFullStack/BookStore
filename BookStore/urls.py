@@ -22,7 +22,7 @@ from django.urls import path, re_path, include
 urlpatterns = [
     path('__debug__/', include(debug_toolbar.urls)),
     path("admin/", admin.site.urls),
-    path("update_server/", views.update, name="update")
+    path("update_server/", views.update, name="update"),
     re_path('bookstore/(?P<version>(v1|v2))/', include('order.urls')),
     re_path('bookstore/(?P<version>(v1|v2))/', include('product.urls'))
 ]
