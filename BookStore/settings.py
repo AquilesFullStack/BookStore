@@ -63,7 +63,7 @@ ROOT_URLCONF = "BookStore.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "BookStore","tempaltes")],
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -157,6 +157,6 @@ REST_FRAMEWORK = {
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 # For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
 
-ALLOWED_HOSTS = ['localhost','https://aquilesnetto.pythonanywhere.com/','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','127.0.0.1', 'aquilesnetto.pythonanywhere.com']
 
 # DEBUG = os.environ.get("DEBUG", "0") == "1"
