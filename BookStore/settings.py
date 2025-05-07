@@ -157,6 +157,6 @@ REST_FRAMEWORK = {
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 # For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','https://aquilesnetto.pythonanywhere.com/','127.0.0.1']
 
 # DEBUG = os.environ.get("DEBUG", "0") == "1"
