@@ -24,5 +24,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("update_server/", views.update, name="update"),
     re_path('bookstore/(?P<version>(v1|v2))/', include('order.urls')),
-    re_path('bookstore/(?P<version>(v1|v2))/', include('product.urls'))
+    re_path('bookstore/(?P<version>(v1|v2))/', include('product.urls')),
+    path('hello/', views.hello_world, name='hello_world')
 ]
