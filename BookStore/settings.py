@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'product',
     'debug_toolbar', #paginação
     'rest_framework.authtoken', #autenticação
+    ''
 ]
 
 MIDDLEWARE = [
@@ -63,7 +64,7 @@ ROOT_URLCONF = "BookStore.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "BookStore", "templates")],
+        "DIRS": [os.path.join(BASE_DIR, "mysite", "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
