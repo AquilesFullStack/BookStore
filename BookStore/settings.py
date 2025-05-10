@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'django_extensions',
+    'django_extensions', 
     'rest_framework',
     'order',
     'product',
@@ -64,7 +64,7 @@ ROOT_URLCONF = "BookStore.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "mysite", "templates")],
+        "DIRS": [os.path.join(BASE_DIR, "BookStore", "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
