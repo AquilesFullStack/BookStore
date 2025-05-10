@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'product',
     'debug_toolbar', #paginação
     'rest_framework.authtoken', #autenticação
-    ''
 ]
 
 MIDDLEWARE = [
