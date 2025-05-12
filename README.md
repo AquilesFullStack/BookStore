@@ -1,8 +1,8 @@
-# BookStore
-BookStore APP
-# Bookstore
+# bookstore
+bookstore APP
+# bookstore
 
-Bookstore APP from Backend Python course from EBAC
+bookstore APP from Backend Python course from EBAC
 
 ## Prerequisites
 
