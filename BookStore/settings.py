@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-y($a(^s5=+ro9fj&8dd2assv%av8dm1-hml18b3-)83tlnf+@u"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 
@@ -36,12 +38,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'django_extensions', 
-    'rest_framework',
-    'order',
-    'product',
-    'debug_toolbar', #paginação
-    'rest_framework.authtoken', #autenticação
+    "django_extensions", 
+    "rest_framework",
+    "order",
+    "product",
+    "debug_toolbar", #paginação
+    "rest_framework.authtoken", #autenticação
 ]
 
 MIDDLEWARE = [
@@ -156,6 +158,6 @@ REST_FRAMEWORK = {
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 # For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1', 'aquilesnetto.pythonanywhere.com']
+ALLOWED_HOSTS = ['aquilesnetto.pythonanywhere.com']
 
 # DEBUG = os.environ.get("DEBUG", "0") == "1"
